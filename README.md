@@ -66,5 +66,11 @@ Ensure you have the following installed on your system:
      http://localhost/Income_Expense/index.php
      ```
 
+Clone or Download the Project
+   - Clone the repository:
+     ```sh
+     git clone https://github.com/ManjunathaPB/Income-and-Expense-Tracker.git
+     ```
+
 
 
