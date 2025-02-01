@@ -1,0 +1,258 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   /* font-family: sans-serif; */
+}
+
+body {
+   min-height: auto;
+   background-color: #f5f5f5;
+   }
+
+.main-bar {
+   background-color: #234E70;
+   /* border-top: 3px solid black; */
+   /* border-bottom: 3px solid black; */
+   padding: 27px;
+   align-items: center;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   top: 0;
+   font-size: 30px;
+   /* margin-left: 215px;  */
+   position: fixed;
+   color: rgba(255, 255, 255, 0.994);
+   letter-spacing: 10px;
+   width: 100%;
+   text-shadow: 40px;
+}
+
+.headline {
+   margin-left: 38%;
+}
+
+.side-bar {
+   background-color: #234E70;
+   backdrop-filter: blur(20px);
+   width: 225px;
+   height: 100vh;
+   position: fixed;
+   top: 0;
+   left: 0;
+   overflow-y: auto;
+   /* border-right: 3px solid black; */
+   /* border-top:3px solid black;  */
+   margin-top: 89px;
+   transition: 0.5s ease;
+   transition-property: left;
+   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.side-bar.active {
+   left: -100%;
+}
+
+.side-bar .menu {
+   width: 100%;
+   margin-top: 25px;
+}
+
+.close-btn {
+   position: absolute;
+   font-size: 23px;
+   right: 0;
+   margin-bottom: 15px;
+   margin-right: 8px;
+   margin-top: 3px;
+   cursor: pointer;
+   transition: 0.4s ease;
+   color: white;
+}
+
+.menu-btn {
+   position: fixed;
+   font-size: 25px;
+   margin-left: 5px;
+   margin-top: 35px;
+   cursor: pointer;
+   transition: 0.2s ease;
+}
+
+.side-bar .menu .item a {
+   text-decoration: none;
+   color: white;
+   font-size: 15px;
+   display: block;
+   padding: 1px 10px;
+   line-height: 60px;
+   /* position: relative; */
+   font-family: sans-serif;
+   /* border: 1px solid; */
+
+}
+
+.side-bar .menu .item a:hover {
+   background-color: whitesmoke;
+   transition: 0.4s ease;
+   font-size: 17px;
+   color: black;
+
+}
+
+.side-bar .menu .item i {
+   margin-right: 10px;
+   color: black;
+}
+
+.side-bar .menu .item a .dropdown {
+   margin-left: 10px;
+   margin-top: 30px;
+   right: 0;
+   left: 170px;
+   position: fixed;
+   transition: 0.3s ease;
+}
+
+.side-bar .menu .item .sub-menu {
+   background: rgba(66, 64, 64, 0.4);
+   display: none;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.side-bar .menu .item .sub-menu a {
+   padding-left: 60px;
+   font-size: 12px;
+}
+
+
+
+.side-bar .menu .item .sub-menu a:hover {
+   color: black;
+   background-color: rgb(153, 245, 245);
+   transition: 0.2s ease;
+   font-size: 13px;
+}
+
+.rotate {
+   transform: rotate(90deg);
+}
+
+/* .userimg i {
+   font-size: 40px;
+   font-weight: 600;
+   color: rgb(17, 16, 16);
+   margin-left: 90px;
+   margin-top: 20px;
+}
+
+.profile-us p {
+   text-align: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman';
+   font-size: 20px;
+   margin-bottom: 2px;
+} */
+.userimg i{
+   font-size: 30px;
+   border-radius: 50%;
+   font-weight: 600; 
+   color: black;
+   margin-left: 90px;
+   margin-top: 25px; 
+}
+.profile-us p{
+     text-align: center; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman';
+    font-size: 17px; 
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgb(241, 248, 253);
+}
+.user {
+   top: 0;
+   width: 225px;
+   background-color:#234E70;
+   /* border-top: 3px solid black; */
+   /* border-bottom: 3px solid black; */
+   position: fixed;
+   height: 89px;
+   /* border-right:3px solid black; */
+}
+
+
+/* dashboard with style */
+
+.section {
+   background-color: white;
+   /* backdrop-filter: blur(20px);   */
+   width: 800px;
+   height: auto;
+   margin: 200px 350px;
+   /* position:fixed;   */
+   border-radius: 3px;
+   box-shadow: 0 0 5px;
+   display: block;
+}
+
+.sectionmenu {
+   font-size: 22px;
+   width: 750px;
+   margin-left: 20px;
+   /* text-align: center; */
+
+}
+
+.header {
+   text-align: center;
+   font-size: 30px;
+   padding: 10px;
+   border-radius: 3px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   text-decoration: underline;
+   background-color:teal;
+   color: #ffffff;
+}
+
+.form-group {
+   margin-top: 10px;
+   /* text-align: center; */
+}
+
+.form-group label {
+   color: rgb(4, 4, 4);
+   position: relative;
+   bottom: -10px; 
+
+}
+
+.form-group input {
+   margin-top: 10px;
+   font-size: 20px;
+   /* outline: none;  */
+   /* border: none; */
+   border: 2px solid black;
+   color: rgb(89, 96, 97);
+   border-radius: 3px;
+}
+
+.form-group .form-control {
+   width: 100%;
+   font-size: 25px;
+   padding-left: 10px;
+}
+
+.btn {
+   font-size: 20px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   border-radius: 3px;
+   padding: 5px;
+   width: 100%;
+   background-color: rgb(5, 251, 5);
+}
+
+.btn:hover {
+   background-color: rgb(15, 191, 15);
+}
+
